@@ -38,9 +38,7 @@ It is planned to support the following vendors
 Add Links to the vendors wallet pages
 ```
 
-```{todo}
-Distinguish between the Wallet Apps, the Wallet Pass APIs and the HCE/ OEM passes. Refine the section above. We may need an own section explaining the universe we are addressing here.
-```
+
 
 At first, we will implement APIs for Google and Apple. The next part focuses on this.
 
@@ -54,10 +52,6 @@ For both, pass objects and pass classes the API provides the following functiona
 
 There are predefined, vendor-specific stereotypes of pass classes (access, payment, transit, health, ...)
 
-```{todo}
-Define term stereotype - but not as glossary term only, better at own or at a concept page!
-What is the difference to a pass type?
-```
 
 ## Abstract Wallet Library
 
