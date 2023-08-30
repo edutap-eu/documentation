@@ -16,6 +16,8 @@ architecture/index.md
 
 # Indices and tables
 
+* {ref}`todolist`
+* {ref}`glossary`
 * {ref}`genindex`
 * {ref}`modindex`
 * {ref}`search`
