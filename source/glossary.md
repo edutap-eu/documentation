@@ -30,6 +30,9 @@ ESI
 EUGLOH
     European University Alliance for Global Health
 
+eduGAIN
+    interfederation of {term}`AAI` identity federations around the world
+
 GDPR
     [General Data Protection Regulation](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
@@ -50,7 +53,13 @@ SP
     {term}`Shibboleth` Service Provider
 
 Shibboleth
-    Shibboleth is a set of Software components provided by the [Shibboleth Consortium](https://www.shibboleth.net/), to provide a federated single-sign-on system / {term}`AAI`
+    Shibboleth is a set of Software components provided by the [Shibboleth Consortium](https://www.shibboleth.net/), to provide a federated single-sign-on system / {term}`AAI`.
+    Shibboleth software components are:
+
+    - Identity Provider
+    - Service Provider
+    - Embedded Discovery Service (previously known as "Where are you from" ({term}`WAYF`) Service)
+    - Metadata Aggregator
 
 ISCED
     [International Standard Classification of Education](https://en.wikipedia.org/wiki/International_Standard_Classification_of_Education)
@@ -66,6 +75,9 @@ SAML
 
 OIDC
     Open ID Connect
+
+OAUTH2
+    Open Authorization Protocol (Version 2) as published via RFC6749 and RFC6750
 
 SCHAC
     {term}`LDAP` [SCHema for ACademia](https://wiki.refeds.org/display/STAN/SCHAC)
