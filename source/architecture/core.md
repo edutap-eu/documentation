@@ -6,7 +6,7 @@ It provides generic components to be used and installed at the {term}`HEIs<HEI>`
 
 It contains the following main components:
 
-- Libraries to communicate with the vendor-specific wallet APIs, like with Google, Apple, or {term}`HCE` systems like NXP, Legic and HID. In the future, other wallet providers are planned to be supported.
+- Libraries to communicate with the vendor-specific wallet APIs, like with Google, Apple, or {term}`HCE` systems like NXP, Legic, and HID. In the future, other wallet providers are planned to be supported.
 - An abstract vendor-neutral library to support all libraries above on a simplified level by providing a unified API.
 - A scalable event-based system to distribute data emitted by wallet actions.
 - a callback handler to proxy events emitted by the wallet provider to the eduTAP system.
