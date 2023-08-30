@@ -10,3 +10,6 @@ eduTAP consists of three major components, which are themselves divided into sub
 
 Additional eduTAP proposes an architecture for infrastructure and deployment strategies.
 
+```{todo}
+Add a overall not-that-deep-into component diagram.
+```
