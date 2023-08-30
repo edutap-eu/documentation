@@ -10,6 +10,7 @@ caption: Contents
 ---
 
 architecture/index.md
+concepts.md
 
 ```
 
