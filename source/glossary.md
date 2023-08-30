@@ -6,8 +6,8 @@
 sorted:
 ---
 
-ECC
-    European Campus Card
+ECCA
+    European Campus Card Association
 
 eduPerson
     {term}`LDAP` Schema [eduPerson](https://wiki.refeds.org/display/STAN/eduPerson)
@@ -30,11 +30,21 @@ EUGLOH
 GDPR
     [General Data Protection Regulation](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
+HCE
+    Host Card Emulation
+
 HEI
+HEIs
     Higher Education Institution
 
 IDM
     Identity Management
+
+IdP
+    {term}`Shibboleth` Identity Provider
+
+SP
+    {term}`Shibboleth` Service Provider
 
 ISCED
     [International Standard Classification of Education](https://en.wikipedia.org/wiki/International_Standard_Classification_of_Education)
@@ -51,10 +61,8 @@ SCHAC
 SSI
     Self Sovereignty Identity
 
-
-% specific technical Terms in Context Wallets
-
 Card
+card
     A Card is a physical medium, often made of plastic, that
 
 Credential
@@ -64,6 +72,8 @@ ID
     Identity Document / Identification - a document which may be used to prove a person's identity
 
 Pass
+Wallet Pass
+wallet pass
     As {term}`Wallet` Pass is an application that contains a visual representation of a card + a data structure + a contact less readable data structure or program
 
 Vault
@@ -72,9 +82,10 @@ Vault
     In German the Terms: Tresorraum, Tresor, Schließfach
 
 Wallet
+wallet
     In Context of this Project is a digital Wallet a smartphone application that acts as a container for {term}`Pass`es. It is derived from the term wallet that describes a small case, often flat and made of leather, for keeping money, credit cards and identification documents
 
-Wallet
+physcial Wallet
     a small case, often flat and made of leather, for keeping money, credit cards and identification documents
 
 `````
