@@ -58,8 +58,8 @@ The models can be referenced by name on the above operations using a registry.
 First, those libraries will be implemented using Python.
 There will be a Python package for each vendor, at first:
 
-- [ ] `edutap.wallet_google`
-- [ ] `edutap.wallet_apple`
+- `edutap.wallet_google`
+- `edutap.wallet_apple`
 
 Both libraries follow the same structure and public API, as well as upcoming APIs.
 In the future, there might be also a JAVA-based (other languages welcome) implementation of those libraries.
