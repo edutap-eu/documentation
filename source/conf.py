@@ -82,6 +82,7 @@ myst_enable_extensions = [
     "fieldlist",
     "colon_fence",
     # "linkify",
+    "tasklist",
 ]
 
 # -- Options for Sphinx.ext.todo --------------------------------------
