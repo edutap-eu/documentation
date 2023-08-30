@@ -20,7 +20,7 @@ import datetime
 # -- Project information -----------------------------------------------------
 
 project = "eduTAP"
-copyright = f"{datetime.date.today().year}, EUGHLOH"
+copyright = f"{datetime.date.today().year}, eduTAP - EUGLOH Working Package - Campus Life"
 author = "eduTAP team and contributors"
 
 # The full version, including alpha/beta/rc tags
@@ -36,6 +36,7 @@ extensions = [
     "myst_parser",
     "sphinx_copybutton",
     "sphinxcontrib.mermaid",
+    "sphinx.ext.todo",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -53,9 +54,20 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
+html_title = "eduTAP"
 
 # html_logo = "_static/logo.svg"
 # html_favicon = "_static/favicon.ico"
+html_logo = "_static/project-logo.png"
+html_favicon = "_static/favicon.ico"
+html_theme_options = {
+    "repository_url": "https://github.com/ECC-Pilot/documentation",
+    "repository_branch": "main",
+    "use_repository_button": True,
+    "use_issues_button": True,
+    # "use_fullscreen_button": True,
+
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -71,3 +83,7 @@ myst_enable_extensions = [
     "colon_fence",
     # "linkify",
 ]
+
+# -- Options for Sphinx.ext.todo --------------------------------------
+
+todo_include_todos = True
