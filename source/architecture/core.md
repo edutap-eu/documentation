@@ -67,7 +67,7 @@ In the future, there might be also a JAVA-based (other languages welcome) implem
 To communicate updates of passes to Apple devices we need to implement a web service to be contacted by the Apple wallet as a client.
 This is a special case and we will provide a FastAPI application with the library.
 
-# Vendor-neutral Wallet Library
+## Vendor-neutral Wallet Library
 
 The library depends on all vendor-specific libraries and provides a vendor-neutral facade to the most common functionality.
 
