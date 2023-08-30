@@ -22,7 +22,7 @@ UML component diagram
 
 ## Wallet specific API Libraries
 
-A set of libraries to be used by developers writing management software for passes to interact with the specific vendors REST APIs.
+A set of libraries to be used by developers writing management software for passes to interact with the specific vendor REST APIs.
 
 In eduTAP the APIs are meant to be used by the Pass Management Portal and the Pass User Portal.
 
@@ -37,8 +37,9 @@ It is planned to support the following vendors
 ```{todo}
 Add Links to the vendors wallet pages
 ```
-
-
+```{todo}
+Link the concepts.
+```
 
 At first, we will implement APIs for Google and Apple. The next part focuses on this.
 
@@ -50,7 +51,9 @@ For both, pass objects and pass classes the API provides the following functiona
 - manage the state (lifecycle),
 - list (with basic filters).
 
-There are predefined, vendor-specific stereotypes of pass classes (access, payment, transit, health, ...)
+There are predefined, vendor-specific {term}`stereotypes <stereotype>` and specific types of pass classes.
+The library defines models for all of these.
+The models can be referenced by name on the above operations using a registry.
 
 
 ## Abstract Wallet Library
@@ -61,8 +64,8 @@ There are predefined, vendor-specific stereotypes of pass classes (access, payme
 
 ## Callback handlers
 
-## Front ends
+## Pass Management
 
-### Pass Management Portal
+### Pass Backoffice
 
 ### Pass User Portal
