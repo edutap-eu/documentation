@@ -132,12 +132,12 @@ Use cases in the domain of pass management are:
 - A manager manages the tappers' passes.
 - A manager sends notifications to whole pass classes or a single pass.
 
-```{todo}
-add the UML from our workshop
+```{figure} uml/pass-management.png
+:alt: Use case diagram showing the pass management roles and actions.
+
+Pass management use-case.
+
 ```
-
-Above, three roles were used:
-
 - A *Tapper* is a person who uses the offers of the providers with their smartphone and the passports stored in it using the reader terminal.
 - A *Manager* - is a person who has the role of supporting the tapper with applications and passes.
 - An *Administrator* is a person who manages pass classes.
