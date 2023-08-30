@@ -12,8 +12,8 @@ It contains the following main components:
 - a callback handler to proxy events emitted by the wallet provider to the eduTAP system.
   The events are emitted if a pass is saved or deleted in the holder's {term}`wallet`.
 - Front ends to manage and issue passes:
-  - A "Pass Management Portal" to create/ update pass classes (including a generic "Pass Designer") and manage the lifecycle of pass objects,
-  - A white label "Pass User Portal" (web and kiosk modes) to apply for passes and manage their passes.
+  - A "Pass Backoffice" to create/ update pass classes (including a generic "Pass Designer") and manage the lifecycle of pass objects,
+  - A white label "Tapper Portal" (web and kiosk modes) to apply for passes and manage their passes.
     It can be configured to define which {term}`pass classes <pass class>` are to be managed.
 
 ```{todo}
@@ -99,8 +99,65 @@ Examples of types of information handled:
 
 ## Callback handlers
 
+Callback handlers are vendor-specific web applications offering a RESTful API to receive information about the lifecycle changes of the passes within the holder's wallet from the vendor.
+They pass this information to the event system.
+
+For example, the callback gets a request when the pass holder stores or deletes a pass to the wallet on their device.
+
+The web applications will be implemented using Python and the FastAPI framework.
+There will be a Python package for each vendor, at first:
+
+- `edutap.callback_google`
+- `edutap.callback_apple`
+
 ## Pass Management
 
-### Pass Backoffice
+Pass management is the task, of creating and designing passes and then offering those passes to potential users, here called tappers.
 
-### Pass User Portal
+There are different types of organizations intended to be using this service:
+- HEIs
+- Specific service providers like
+  - Student unions (cantinas, cafes, vending machines, housing/dorms, ...)
+  - Libraries
+  - Inter-institutional service providers, like educational sporting facilities
+
+Use cases in the domain of pass management are:
+
+- An admin creates (designs) new and manages existing pass classes.
+- A tapper applies for a pass, then
+  - manage the application cycle and reject or issue the pass (like for a common ID pass),
+  - immediate issuing of a pass (like for a service pass).
+- A tapper downloads their passes to their device.
+- A tapper manages their passes.
+- A manager manages the tappers' passes.
+- A manager sends notifications to whole pass classes or a single pass.
+
+```{todo}
+add the UML from our workshop
+```
+
+Above, three roles were used:
+
+- A *Tapper* is a person who uses the offers of the providers with their smartphone and the passports stored in it using the reader terminal.
+- A *Manager* - is a person who has the role of supporting the tapper with applications and passes.
+- An *Administrator* is a person who manages pass classes.
+
+The application is divided into two main, but interconnected areas:
+
+1. a back office for administrators and managers.
+1. a tapper portal for the holders of passes.
+
+Technically it consists of two web-application backends, each a RESTful API offering the functionality for the task.
+The reason is better scalability.
+While the back office is used only by a small group of staffers, the tapper portal is accessed by up to several 10 thousand tappers at one organization.
+Thus the tapper portal needs the ability to scale horizontally on a different level than the back office.
+
+Each, the back office and the tapper portal, has a management front-end provided as a JS application.
+
+Both are offered as white-label applications with the ability to change the logo or CSS by the organization installing the apps.
+
+Some organizations may decide to integrate the tapper portal part only into their existing portals.
+In this case, the RESTFul API alone can be used to fulfill the task.
+
+Both, the back office and tapper portal need a kiosk mode.
+A kiosk has an NFC device and offers direct interaction with the tapper's device to also write passes to the phone.
