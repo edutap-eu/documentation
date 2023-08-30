@@ -13,6 +13,7 @@ architecture/index.md
 
 ```
 
+
 # Indices and tables
 
 * {ref}`genindex`

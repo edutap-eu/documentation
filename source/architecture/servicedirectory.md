@@ -1,1 +1,1 @@
-# Service Directory
+# Architecture of the Service Directory

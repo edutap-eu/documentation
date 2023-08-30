@@ -2,4 +2,9 @@
 
 ## Main parts of eduTAP
 
-todo
+eduTAP consists of three major components, which are themselves divided into sub-components.
+
+- Core
+- Service Directory
+- Mandant Specific Applications
+

@@ -9,7 +9,7 @@ caption: Contents
 overview.md
 core.md
 servicedirectory.md
-masa.md
+masas.md
 infrastructure.md
 
 ```
