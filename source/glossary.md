@@ -6,6 +6,9 @@
 sorted:
 ---
 
+AAI
+    Authentication and Authorization Infrastructure
+
 ECCA
     European Campus Card Association
 
@@ -46,6 +49,9 @@ IdP
 SP
     {term}`Shibboleth` Service Provider
 
+Shibboleth
+    Shibboleth is a set of Software components provided by the [Shibboleth Consortium](https://www.shibboleth.net/), to provide a federated single-sign-on system / {term}`AAI`
+
 ISCED
     [International Standard Classification of Education](https://en.wikipedia.org/wiki/International_Standard_Classification_of_Education)
 
@@ -54,6 +60,12 @@ LDAP
 
 LMU
     Ludiwg-Maximilians-Universität München
+
+SAML
+    Security Assertion Markup Language
+
+OIDC
+    Open ID Connect
 
 SCHAC
     {term}`LDAP` [SCHema for ACademia](https://wiki.refeds.org/display/STAN/SCHAC)
