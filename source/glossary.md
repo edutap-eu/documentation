@@ -40,6 +40,7 @@ HCE
     Host Card Emulation
 
 HEI
+HEIs
     Higher Education Institution
 
 IDM
@@ -60,7 +61,7 @@ Shibboleth
 
     - Identity Provider
     - Service Provider
-    - Embedded Discovery Service (previously known as "Where are you from" ({term}`WAYF`) Service)
+    - Embedded Discovery Service (previously known as "Where are you from" (WAYF) Service)
     - Metadata Aggregator
 
 ISCED
