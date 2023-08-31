@@ -16,10 +16,13 @@ It contains the following main components:
   - A white label "Tapper Portal" (web and kiosk modes) to apply for passes and manage their passes.
     It can be configured to define which {term}`pass classes <pass class>` are to be managed.
 
-```{todo}
-- [ ] UML component diagram
-```
 
+```{figure} uml/overview.svg
+:alt: Component diagram showing architectural overview.
+
+Component Overview.
+
+```
 ## Wallet specific API Libraries
 
 A set of libraries to be used by developers writing management software for passes to interact with the specific vendor REST APIs.
