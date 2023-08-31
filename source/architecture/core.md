@@ -17,7 +17,7 @@ It contains the following main components:
     It can be configured to define which {term}`pass classes <pass class>` are to be managed.
 
 ```{todo}
-UML component diagram
+- [ ] UML component diagram
 ```
 
 ## Wallet specific API Libraries
@@ -35,10 +35,10 @@ It is planned to support the following vendors
 - Open Wallet Foundation
 
 ```{todo}
-Add Links to the vendors wallet pages
+- [ ] Add Links to the vendors wallet pages
 ```
 ```{todo}
-Link the concepts.
+- [ ] Link the concepts.
 ```
 
 At first, we will implement APIs for Google and Apple. The next part focuses on this.
