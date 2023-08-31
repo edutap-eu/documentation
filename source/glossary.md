@@ -40,7 +40,6 @@ HCE
     Host Card Emulation
 
 HEI
-HEIs
     Higher Education Institution
 
 IDM
@@ -48,6 +47,9 @@ IDM
 
 IdP
     {term}`Shibboleth` Identity Provider
+
+Service
+    A service is the collected offer of a {term}`provider` that is accessible via a {term}`pass`.
 
 SP
     {term}`Shibboleth` Service Provider
@@ -86,7 +88,6 @@ SSI
     Self Sovereignty Identity
 
 Card
-card
     A Card is a physical medium, often made of plastic, that
 
 Credential
@@ -97,8 +98,7 @@ ID
 
 Pass
 Wallet Pass
-wallet pass
-    As {term}`Wallet` Pass is an application that contains a visual representation of a card + a data structure + a contact less readable data structure or program
+    A (Wallet) Pass is a virtual representation of a card. It is contect-less readable. It includes a visual design, a data structure, security mechanisms and visual personal data (photo, name..). The passport resides in a {term}`wallet` in the smartphone.
 
 Vault
     A digital vault is a large secure date store. It is derived from the term vault that describes a secure room or rooms in or below a bank used to store valuables. The noun safe or safe-deposit box, describing a box, usually made of metal, fireproof, in which personal valuables can be locked for safekeeping is a related term.
@@ -106,7 +106,12 @@ Vault
     In German the Terms: Tresorraum, Tresor, Schließfach
 
 Wallet
-wallet
     In Context of this Project is a digital Wallet a smartphone application that acts as a container for {term}`Pass`es. It is derived from the term wallet that describes a small case, often flat and made of leather, for keeping money, credit cards and identification documents
+
+Tapper
+    a natural is a person who uses the offers of the {term}`providers<Provider>` with their smartphone and the {term}`passes<Pass>` stored in it using the reader terminal.
+
+Provider
+    an organization who provides offers for {term}`tappers<Tapper>` on site using reading terminals and connected technology.
 
 `````
