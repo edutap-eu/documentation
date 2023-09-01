@@ -31,11 +31,11 @@ In eduTAP the APIs are meant to be used by the Pass Management Portal and the Pa
 
 It is planned to support the following vendors
 
-- Apple
-- Google
-- HCE vendors (NXP, Legic, HID)
-- EUDI Wallet
-- Open Wallet Foundation
+- [Apple](https://www.apple.com/wallet/)
+- [Google](https://wallet.google/)
+- HCE vendors ([NXP](https://www.nxp.com/products/rfid-nfc:RFID-NFC), [Legic](https://www.legic.com/partners-services/wallet-program))
+- [EU Digital Identity Wallet](https://eudiwalletconsortium.org/)
+- [openWallet Foundation](https://openwallet.foundation/)
 
 ```{todo}
 - [ ] Add Links to the vendors wallet pages

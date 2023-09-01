@@ -2,3 +2,4 @@
 *.pyo
 venv/
 build/
+.DS_Store
