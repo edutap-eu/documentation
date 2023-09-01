@@ -1,25 +1,28 @@
 # eduTAP central documentation
 
-This is the documentation of eduTAP.
+This is the repository of the official documentation of eduTAP.
 
-The official documentation's HTML pages are located at https://doc.edutap.eu
+Its HTML pages are located at https://doc.edutap.eu
 
 ## Authoring
 
-For the local authoring preview, you first need Python 3.11 to be installed.
-Then you need to clone the repository.
-Then have to run the following commands in the cloned repositories directory:
+This documentation is written using [Sphinx](https://www.sphinx-doc.org/) and [MyST](https://myst-parser.readthedocs.io/), a rich and extensible flavour of Markdown for authoring technical and scientific documentation.f
 
-```bash
-python -m venv venv
-source ./venv/bin/activate
-pip install -r requirements.txt
-make livehtml
-```
+For the local authoring preview, you
 
-Then go to http://localhost:8000 to view the documentation.
+1. need Python 3.11 to be installed.
+2. clone the repository.
+3. run the following commands in the cloned repositories directory:
 
-Each time you save a file, the part gets re-rendered and reloaded in the browser.
+   ```bash
+   python -m venv venv
+   source ./venv/bin/activate
+   pip install -r requirements.txt
+   make livehtml
+   ```
+1. go to http://localhost:8000 to view the documentation.
+
+Each time you save a file, this part gets re-rendered and reloaded in the browser.
 
 ## Build and deployment
 
