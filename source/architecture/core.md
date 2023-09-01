@@ -17,10 +17,10 @@ It contains the following main components:
     It can be configured to define which {term}`pass classes <pass class>` are to be managed.
 
 
-```{figure} uml/overview.svg
+```{figure} uml/core.svg
 :alt: Component diagram showing architectural overview.
 
-Component Overview.
+Core Overview.
 
 ```
 ## Wallet specific API Libraries

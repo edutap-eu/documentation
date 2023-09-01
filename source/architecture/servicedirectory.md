@@ -23,7 +23,10 @@ While the central management system does not need to scale much, the tapper sear
 
 # Use case
 
-```{todo}
 
-add use case diagram from Sauwald meeting and add narrative explanation.
+```{figure} uml/service-dir.png
+:alt: Use case diagram for service directory.
+
+Service Directory.
+
 ```

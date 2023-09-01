@@ -8,10 +8,14 @@ eduTAP consists of three major components, which are themselves divided into sub
 
 Additional eduTAP proposes an architecture for infrastructure and deployment strategies.
 
-```{todo}
-Add a overall not-that-deep-into component diagram.
-```
 
+
+```{figure} uml/overview.svg
+:alt: Component diagram showing architectural overview.
+
+edutap Overview.
+
+```
 More details are covered in the following chapters.
 
 ```{toctree}
