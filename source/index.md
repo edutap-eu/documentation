@@ -11,6 +11,7 @@ caption: Contents
 
 architecture/index.md
 concepts.md
+packages/index.md
 
 ```
 
