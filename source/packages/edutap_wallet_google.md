@@ -12,7 +12,7 @@ It contains:
    - update,
    - disable,
    - list
-  wallet classes and objects
+  wallet classes, objects and related items
   and
   - issue passes.
 - Pydantic models of the classes, objects, and their (nested) primitives.
@@ -51,7 +51,7 @@ All one need to do is to import the `api` module:
 from edutap.wallet_google import api
 ```
 
-The `api`` module has the functions:
+The `api` module has the functions:
 
 - `api.create`
 - `api.read`
