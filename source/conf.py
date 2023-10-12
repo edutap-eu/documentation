@@ -61,12 +61,28 @@ html_title = "eduTAP"
 html_logo = "_static/project-logo.png"
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
-    "repository_url": "https://github.com/ECC-Pilot/documentation",
-    "repository_branch": "main",
-    "use_repository_button": True,
-    "use_issues_button": True,
-    # "use_fullscreen_button": True,
-
+    "icon_links": [
+        {
+            # Label for this link
+            "name": "GitHub",
+            # URL where the link will redirect
+            "url": "https://github.com/edutap-eu/",  # required
+            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "icon": "fa-brands fa-square-github",
+            # The type of image to be used (see below for details)
+            "type": "fontawesome",
+        },
+        {
+            # Label for this link
+            "name": "Website",
+            # URL where the link will redirect
+            "url": "https://edutap.eu/",  # required
+            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "icon": "fa fa-globe",
+            # The type of image to be used (see below for details)
+            "type": "fontawesome",
+        },
+    ],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
