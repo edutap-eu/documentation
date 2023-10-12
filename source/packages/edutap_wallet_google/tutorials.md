@@ -27,8 +27,6 @@ class_id = f"{os.environ.get('EDUTAP_WALLET_GOOGLE_ISSUER_ID')}.exampleclass01.e
 new_class = api.create(
     "GenericClass",
     {
-        # ids are always consisting of the issuer id as a prefix followed
-        # by a custom postfix, delimited by a dot.
         "id": class_id,
     },
 )
@@ -38,8 +36,7 @@ Now we create a simple Wallet Object based on the freshly created class.
 
 ```python
 
-# if you run the code more than once, you need to change the ID of the object,
-# like by incrementing the number part.
+# if you run the code more than once, you need to change the ID of the object
 object_id = f"{os.environ.get('EDUTAP_WALLET_GOOGLE_ISSUER_ID')}.exampleobject01.edutap_example"
 
 new_object = api.create(

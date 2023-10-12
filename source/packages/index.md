@@ -1,4 +1,6 @@
-# eduTAP Packages Documentation
+# Software Packages
+
+Documentation of the different eduTAP packages.
 
 ```{toctree}
 ---
