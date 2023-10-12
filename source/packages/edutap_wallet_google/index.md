@@ -9,7 +9,7 @@ It provides an API to
 The package contains validating data-models made with [Pydantic](https://docs.pydantic.dev/).
 
 Behind the scenes it provides a session manager for authorized HTTPS communication with the Google Restful API.
-An extensible registry for additional models of classes and objects ensures enhancability.
+An extensible registry for additional models of classes and objects ensures extendibility.
 
 The documentation for `edutap.wallet_google` is roughly structured into four parts:
 

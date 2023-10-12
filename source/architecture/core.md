@@ -41,7 +41,7 @@ It is planned to support the following vendors
 - [EU Digital Identity Wallet](https://eudiwalletconsortium.org/)
 - [openWallet Foundation](https://openwallet.foundation/)
 
-Each vendor works conceptionally different.
+Each vendor works conceptional different.
 Thus the libraries are different in their structure and API.
 
 At first, we will implement APIs for Google and Apple.
@@ -81,7 +81,7 @@ For both, callback handlers and pass-server we will provide a FastAPI applicatio
 The library depends on all vendor-specific libraries and provides a vendor-neutral facade to the most common functionality.
 
 ```{todo}
-The details and architecture needs to be refined if the vendor-specific implemenations are mostly done.
+The details and architecture needs to be refined if the vendor-specific implementations are mostly done.
 ```
 
 ## Event system

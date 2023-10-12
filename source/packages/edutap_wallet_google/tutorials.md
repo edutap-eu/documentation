@@ -22,7 +22,7 @@ import os
 
 # if you run the code more than once, you need to change the ID of the class,
 # like by incrementing the number part.
-class_id = f"{os.environ.get('EDUTAP_WALLET_GOOGLE_ISSUER_ID')}.exampleclass01.edutap_example"
+class_id = f"{os.environ.get('EDUTAP_WALLET_GOOGLE_ISSUER_ID')}.example_class01.edutap_example"
 
 new_class = api.create(
     "GenericClass",
@@ -37,7 +37,7 @@ Now we create a simple Wallet Object based on the freshly created class.
 ```python
 
 # if you run the code more than once, you need to change the ID of the object
-object_id = f"{os.environ.get('EDUTAP_WALLET_GOOGLE_ISSUER_ID')}.exampleobject01.edutap_example"
+object_id = f"{os.environ.get('EDUTAP_WALLET_GOOGLE_ISSUER_ID')}.example_object01.edutap_example"
 
 new_object = api.create(
     "GenericObject",
@@ -64,7 +64,7 @@ new_object = api.create(
 ```
 
 Now the pass is ready for download.
-To create a linkt to download the pass, we need to provide the ID of the pass and the origin of the download.
+To create a link to download the pass, we need to provide the ID of the pass and the origin of the download.
 
 ```python
 print(
@@ -78,10 +78,13 @@ print(
 This prints a link, which can be opened on a mobile device to download the pass to the Google Wallet.
 It can be opened in the desktop browser too, given you are logged in with the same Google account as on your mobile device.
 
+## Update a class
 
 ## Update a pass
 
 ## Send a notification to a pass
 
 ## Disable a pass
+
+## List passes
 
