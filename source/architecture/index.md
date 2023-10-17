@@ -28,5 +28,5 @@ core.md
 servicedirectory.md
 masas.md
 infrastructure.md
-
+semanticmodel.md
 ```

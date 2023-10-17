@@ -22,7 +22,6 @@ It contains the following main components:
 :alt: Component diagram showing architectural overview.
 
 Core Overview.
-
 ```
 ## Wallet specific API Libraries and support services
 
@@ -157,3 +156,13 @@ In this case, the RESTFul API alone can be used to fulfill the task.
 
 Both, the back office and tapper portal need a kiosk mode.
 A kiosk has an NFC device and offers direct interaction with the tapper's device to also write passes to the phone.
+
+```{toctree}
+---
+maxdepth: 2
+caption: Contents
+---
+
+semanticmodel.md
+
+```
