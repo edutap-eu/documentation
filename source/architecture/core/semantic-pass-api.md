@@ -5,9 +5,6 @@
 Here we provide semantic pass schemas and possible definitions, primarily vendor-neutral.
 There is no direct one-to-one mapping from semantic pass definitions to vendor-specific pass models, because of differences between different vendors with their proprietary pass models.
 
-[mapping between existing vendor pass models](https://notificare.com/blog/2023/02/17/how-to-create-digital-passes-for-all/)
-
-[google pass converter](https://github.com/google-wallet/pass-converter)
 
 ```{attention}
 These semantic pass models are from user-centric view and not technical aspect.
@@ -42,6 +39,12 @@ Anyway, we need to know the terminology to be able to map the semantic model to 
 
 ```{hint}
 Explanation of the [Google Terminology](https://developers.google.com/wallet/generic/resources/terminology)
+```
+
+```{hint}
+There are already rough mappings between both vendors online, i.e.:
+- [mapping between existing vendor pass models](https://notificare.com/blog/2023/02/17/how-to-create-digital-passes-for-all/)
+- [google pass converter](https://github.com/google-wallet/pass-converter)
 ```
 
 #### Google
