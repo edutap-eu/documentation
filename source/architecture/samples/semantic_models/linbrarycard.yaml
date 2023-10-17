@@ -1,0 +1,85 @@
+# Apple: https://developer.apple.com/design/human-interface-guidelines/wallet/
+
+
+pass_schema:
+  metadata:
+    title: LibraryCard
+
+  transforms:
+    - apple:
+      target_type: generic
+    - google:
+      target_type: GenericClass
+
+  fields:
+    card_id: 
+      type: string
+      description: The unique identifier of the library card.
+      required: true
+      transforms:
+        - apple:
+          target: ...
+        - google:
+          target: ...
+      validations: ...
+
+    nfc: 
+      type: boolean
+      description: Whether the library card supports SmartTap.
+      required: false
+      transforms:
+        - apple:
+          target: nfc
+        - google:
+          target: smarttap
+      validations: ...
+
+    logo: 
+      type: url
+      description: The URL of the library card's logo.
+      required: false
+      transforms:
+        - apple:
+          target: logo
+        - google:
+          target: logo
+      validations: ...
+
+    organization: 
+      type: string
+      description: The name of the library/university.
+      required: true
+      transforms:
+        - apple:
+          target: 
+            - organizationName
+            - logoText
+        - google:
+          target: card_title
+      validations: ...
+    
+    title:
+      type: string
+      description: The title of the library card.
+      required: true
+      transforms:
+        - apple:
+          target: primaryFields/{key?}
+        - google:
+          target: header
+      validations: ...
+
+    key_values:
+      type: array
+      description: The key-value pairs to display on the library card.
+      values: 
+        key: str
+        label: str
+        value: str
+        transforms:
+          - apple:
+            target: secondaryFields/{key?}
+          - google:
+            target: classTemplateInfo/listTemplateOverride/listTemplateOverride/firstRowOption/fieldOption/fields[]/[fieldPath|dateFormat]
+
+
