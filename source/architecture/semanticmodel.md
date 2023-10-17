@@ -23,15 +23,15 @@ We shall provide:
 
 ## Terminology of Semantic Model and Logic:
 
-### Pass Schema**:
+### Pass Schema
 - contains the information which fields have to or can be provided for a concrete pass template
 - contains the transformation specification for the different target platforms
 - validation information
 
-### Pass Definition**
+### Pass Definition
 - contains the data definition for a specific pass e.g. LMU Library Pass, but still vendor independent.
 
-### ModelEngine**
+### ModelEngine
 - based on the fields and their constraints given in the Pass Schema, the ModelEngine validates the Pass Definition.
 - based on the transformation definition given in the Pass Schema, the ModelEngine transforms the Pass Definition into a vendor specific pass models.
 
