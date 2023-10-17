@@ -24,9 +24,8 @@ maxdepth: 2
 caption: Contents
 ---
 
-core.md
+core/index.md
 servicedirectory.md
 masas.md
 infrastructure.md
-semanticmodel.md
 ```

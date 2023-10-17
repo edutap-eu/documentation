@@ -115,4 +115,8 @@ Tapper
 Provider
     an organization who provides offers for {term}`tappers<Tapper>` on site using reading terminals and connected technology.
 
-`````
+MaSA
+    *Ma*ndant *S*pecific *A*pplication
+
+
+```

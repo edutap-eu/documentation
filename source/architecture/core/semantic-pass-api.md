@@ -1,9 +1,9 @@
-# Semantic Pass Models
+# Architecture of the Semantic Pass API
 
 ## Overview
 
-Here we provide semantic pass models primarily vendor-neutral.
-There is no direct one-to-one mapping from semantic pass models to vendor-specific pass models, because of differences between different vendors with their proprietary pass models.
+Here we provide semantic pass schemas and possible definitions, primarily vendor-neutral.
+There is no direct one-to-one mapping from semantic pass definitions to vendor-specific pass models, because of differences between different vendors with their proprietary pass models.
 
 [mapping between existing vendor pass models](https://notificare.com/blog/2023/02/17/how-to-create-digital-passes-for-all/)
 
@@ -54,7 +54,7 @@ The differentiation into Pass Class and Pass Object as its done as Google is not
 Apple follows a different approach to habdle passes.
 Apple contains only passes stored in a `*.pkpass` file which is a .zip file with checksums and a manifest signed by certificates to make it manipulation-safe.
 
-However, to work efficiently with passes, internally at eduTAP we decided to introduce pass templates differentiate between them and and passes as well.
+However, to work efficiently with passes, internally at eduTAP we decided to introduce pass templates to distinguish between them and and passes as well.
 We have:
 
 - Pass Template: a pass definition that can be used to create a pass object by copy and modify.
