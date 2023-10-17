@@ -1,4 +1,4 @@
-# Architecture of Pass Management
+# Architecture of eduTAP Pass Management
 
 Pass management is the task, of creating and designing passes and then offering those passes to potential users, here called tappers.
 

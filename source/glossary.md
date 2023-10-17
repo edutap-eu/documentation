@@ -99,7 +99,7 @@ ID
 
 Pass
 Wallet Pass
-    A (Wallet) Pass is a virtual representation of a card. It is contect-less readable. It includes a visual design, a data structure, security mechanisms and visual personal data (photo, name..). The passport resides in a {term}`wallet` in the smartphone.
+    A (Wallet) Pass is a virtual representation of a card. It is context-less readable. It includes a visual design, a data structure, security mechanisms and visual personal data (photo, name..). The passport resides in a {term}`wallet` in the smartphone.
 
 Vault
     A digital vault is a large secure date store. It is derived from the term vault that describes a secure room or rooms in or below a bank used to store valuables. The noun safe or safe-deposit box, describing a box, usually made of metal, fireproof, in which personal valuables can be locked for safekeeping is a related term.

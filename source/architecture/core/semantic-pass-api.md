@@ -1,4 +1,4 @@
-# Architecture of the Semantic Pass API
+# Architecture of the eduTAP Semantic Pass API
 
 ## Overview
 

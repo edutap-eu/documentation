@@ -1,7 +1,7 @@
-# Architecture of Wallet specific API Libraries and support services
+# Architecture of eduTAP Vendor specific API
 
 A set of libraries to be used by developers writing management software for passes.
-Additionally, services are provided to be used by the libraries or the vendor specific systems.
+Additionally, support services are provided to be used by the libraries or the vendor specific systems.
 
 They interact either with the specific vendor REST APIs or provide the functionality.
 
@@ -29,7 +29,7 @@ For both, passes (Google: wallet objects) and pass templates (Google: wallet cla
 - manage the state (lifecycle),
 - list (with basic filters).
 
-There are predefined, vendor-specific {term}`stereotypes <stereotype>` and specific types of passes.
+There are predefined, vendor-specific pass types.
 The libraries are defining models for all of these.
 The models can be referenced by name on the above operations using a registry.
 

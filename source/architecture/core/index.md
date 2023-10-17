@@ -3,11 +3,11 @@
 
 ```{toctree}
 ---
-maxdepth: 2
+maxdepth: 1
 caption: Contents
 ---
 
-wallet-specific-api-libraries-and-support-services.md
+vendor-specific-api.md
 semantic-pass-api.md
 pass-management.md
 event-system.md
