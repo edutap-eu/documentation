@@ -330,3 +330,51 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    SmartTapMerchantData
 
 ```
+
+## Other
+
+```{eval-rst}
+
+.. rubric:: Base Model Classes
+
+`edutap.wallet_google.modelbase`
+
+.. currentmodule:: edutap.wallet_google.modelbase
+
+.. autosummary::
+   :toctree: _autosummary
+
+   GoogleWalletModel
+   GoogleWalletWithIdModel
+   GoogleWalletClassModel
+   GoogleWalletObjectModel
+   GoogleWalletObjectReference
+
+.. rubric:: Model Registry
+
+`edutap.wallet_google.registry`
+
+.. currentmodule:: edutap.wallet_google.registry
+
+.. autosummary::
+   :toctree: _autosummary
+
+   register_model
+   lookup_model
+   lookup_model_by_plural_name
+   lookup_metadata
+
+
+.. rubric:: Session
+
+`edutap.wallet_google.session`
+
+.. currentmodule:: edutap.wallet_google.session
+
+.. autosummary::
+   :toctree: _autosummary
+
+   SessionManager
+   HTTPRecorder
+
+```
