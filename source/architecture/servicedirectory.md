@@ -11,17 +11,17 @@ It consists of
    It provides a REST API to include the directory entries in the local portals of the organizations if needed.
    Alternatively, it provides the possibility to configure micro search portals for organizations without resources to integrate with their portal, with some customization features (simple style and logo overrides).
 
-# Considerations
+## Considerations
 
 We need a central management system with fine-grained access control in the style of a modern CMS. It stores the data in a classical database.
 
-Additional collected data is then provided to a modern, scalable search index (like ElastichSearch, Typesense, ...).
+Additional collected data is then provided to a modern, scalable search index (like ElasticSearch, TypeSense, ...).
 
 The search portal is a separate, modern web application. It uses the index data to provide the information to the tapper.
 
 While the central management system does not need to scale much, the tapper search portal and the index servers do need to be able to scale massively.
 
-# Use case
+## Use case
 
 
 ```{figure} uml/service-dir.png
