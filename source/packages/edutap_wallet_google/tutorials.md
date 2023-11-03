@@ -80,11 +80,35 @@ It can be opened in the desktop browser too, given you are logged in with the sa
 
 ## Update a class
 
+```{todo}
+
+Document the update process for a class
+```
+
 ## Update a pass
+
+```{todo}
+
+Document the update process for a pass
+```
 
 ## Send a notification to a pass
 
+```{todo}
+
+Document the notifucation process for a class
+```
+
 ## Disable a pass
+
+```{todo}
+
+Document how to disable passes
+```
 
 ## List passes
 
+```{todo}
+
+Document how to list passes
+```

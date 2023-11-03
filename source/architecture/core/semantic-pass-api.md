@@ -54,7 +54,7 @@ There are already rough mappings between both vendors online, i.e.:
 #### Apple
 
 The differentiation into Pass Class and Pass Object as its done as Google is not relevant.
-Apple follows a different approach to habdle passes.
+Apple follows a different approach to handle passes.
 Apple contains only passes stored in a `*.pkpass` file which is a .zip file with checksums and a manifest signed by certificates to make it manipulation-safe.
 
 However, to work efficiently with passes, internally at eduTAP we decided to introduce pass templates to distinguish between them and and passes as well.
