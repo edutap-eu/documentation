@@ -38,6 +38,8 @@ extensions = [
     "sphinxcontrib.mermaid",
     "sphinx.ext.todo",
     "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinxcontrib.autodoc_pydantic",
 ]
 
 # Add any paths that contain templates here, relative to this directory.

@@ -4,4 +4,5 @@ pydata_sphinx_theme
 sphinx-copybutton
 sphinxcontrib-mermaid
 sphinx-autobuild
+autodoc_pydantic
 git+https://github.com/edutap-eu/edutap.wallet_google.git@main
