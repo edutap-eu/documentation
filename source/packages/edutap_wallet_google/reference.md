@@ -381,6 +381,8 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    lookup_model
    lookup_model_by_plural_name
    lookup_metadata
+   raise_when_operation_not_allowed
+   RegistryMetadataDict
 
 
 .. rubric:: Session
