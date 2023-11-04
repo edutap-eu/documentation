@@ -131,6 +131,24 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    EventSeat
    EventReservationInfo
 
+.. rubric:: Primitives
+
+`edutap.wallet_google.models.primitives`
+
+.. currentmodule:: edutap.wallet_google.models.primitives
+
+.. autosummary::
+   :toctree: _autosummary
+
+   Uri
+   ImageUri
+   Image
+   PassConstraints
+   SecurityAnimation
+   GroupingInfo
+   Pagination
+   CallbackOptions
+
 .. rubric:: Primitives: Enumerations
 
 `edutap.wallet_google.models.primitives.enums`
