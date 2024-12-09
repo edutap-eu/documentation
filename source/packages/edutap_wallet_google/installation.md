@@ -2,13 +2,35 @@
 
 ## Preconditions
 
-Python 3.10, 3.11 or 3.12 is required.
-
-Recommendation: Before installing the package, create a virtual environment and activate it.
+Python 3.10+, currently up to 3.13 is tested.
 
 ## Installation
 
 The package is hosted at the Python Package Index (PyPI) and can be installed using `pip install edutap.wallet_google`.
+
+We recommend working with `uv`
+
+```bash
+uv venv -p 3.13.0
+source .venv/bin/activate
+uv pip install edutap.wallet_google
+```
+
+## Development
+
+## uv pip install -e .[test,typecheck,develop]
+
+Run all tests with
+
+```bash
+tox -e tests
+```
+
+Check codestyle with
+
+```bash
+tox -e lint
+```
 
 ## Configuration
 
