@@ -1,6 +1,8 @@
+.DS_Store
 *.pyc
 *.pyo
-venv/
-build/
-.DS_Store
 **/_autosummary/*
+/.mxmake/
+/.venv/
+/requirements-mxdev.txt
+build/
