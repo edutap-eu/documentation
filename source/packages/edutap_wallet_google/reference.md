@@ -44,7 +44,20 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
    GenericClass
    GenericObject
+   Notifications
+   ExpiryNotification
+   UpcomingNotification
 
+.. rubric:: Message
+
+`edutap.wallet_google.models.message`
+
+.. currentmodule:: edutap.wallet_google.models.message
+
+.. autosummary::
+   :toctree: _autosummary
+
+   AddMessageRequest
 
 .. rubric:: Retail
 
@@ -254,7 +267,6 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    :toctree: _autosummary
 
    DateTime
-   EventDateTime
    TimeInterval
 
 .. rubric:: Primitives: Localized String
@@ -279,7 +291,17 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    :toctree: _autosummary
 
    LatLongPoint
-   EventVenue
+
+.. rubric:: Primitives: Message
+
+`edutap.wallet_google.models.primitives.message`
+
+.. currentmodule:: edutap.wallet_google.models.primitives.message
+
+.. autosummary::
+   :toctree: _autosummary
+
+   Message
 
 .. rubric:: Primitives: Money
 
@@ -291,21 +313,6 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    :toctree: _autosummary
 
    Money
-
-.. rubric:: Primitives: Notification
-
-`edutap.wallet_google.models.primitives.notification`
-
-.. currentmodule:: edutap.wallet_google.models.primitives.notification
-
-.. autosummary::
-   :toctree: _autosummary
-
-   ExpiryNotification
-   UpcomingNotification
-   Notifications
-   Message
-   AddMessageRequest
 
 .. rubric:: Primitives: Retail
 
@@ -355,9 +362,9 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
 .. rubric:: Base Model Classes
 
-`edutap.wallet_google.modelbase`
+`edutap.wallet_google.models.bases`
 
-.. currentmodule:: edutap.wallet_google.modelbase
+.. currentmodule:: edutap.wallet_google.models.bases
 
 .. autosummary::
    :toctree: _autosummary
@@ -366,7 +373,9 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    GoogleWalletWithIdModel
    GoogleWalletClassModel
    GoogleWalletObjectModel
-   GoogleWalletObjectReference
+   GoogleWalletObjectWithClassReference
+   GoogleWalletStyleableMixin
+   GoogleWalletCommonLogosMixin
 
 .. rubric:: Model Registry
 

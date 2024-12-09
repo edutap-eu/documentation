@@ -4,5 +4,5 @@
 **/_autosummary/*
 /.mxmake/
 /.venv/
+/html/
 /requirements-mxdev.txt
-build/
