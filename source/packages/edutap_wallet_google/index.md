@@ -6,7 +6,7 @@ It provides an API to
 - create, read, update, disable, and list Wallet Classes, Wallet Objects, and related items,
 - issue passes.
 
-The package contains validating data-models made with [Pydantic](https://docs.pydantic.dev/).
+The package contains validating data-models of the Google data structures made with [Pydantic](https://docs.pydantic.dev/).
 
 Behind the scenes it provides a session manager for authorized HTTPS communication with the Google Restful API.
 An extensible registry for additional models of classes and objects ensures extendibility.
