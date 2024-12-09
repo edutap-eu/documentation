@@ -1,7 +1,7 @@
 (glossary)=
 # Glossary
 
-`````{glossary}
+```{glossary}
 ---
 sorted:
 ---
