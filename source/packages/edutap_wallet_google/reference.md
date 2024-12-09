@@ -44,9 +44,6 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
    GenericClass
    GenericObject
-   Notifications
-   ExpiryNotification
-   UpcomingNotification
 
 .. rubric:: Message
 
@@ -118,7 +115,21 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
 ### Data-Types
 
+
 ```{eval-rst}
+
+.. currentmodule:: edutap.wallet_google.models.generic
+
+.. rubric:: Generic
+
+`edutap.wallet_google.models.generic`
+
+.. autosummary::
+   :toctree: _autosummary
+
+   Notifications
+   ExpiryNotification
+   UpcomingNotification
 
 .. currentmodule:: edutap.wallet_google.models.retail
 

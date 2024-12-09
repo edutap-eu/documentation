@@ -34,6 +34,12 @@ tox -e lint
 
 ## Configuration
 
+Configuration is done using environment variables.
+
+If available, dotenv-files (`.env`) are respected.
+
+### How to connect with Google
+
 In order to create new Wallet Classes and Wallet Objects you need to have a Google Developer account and a Google Wallet API project.
 
 To authenticate with the Google API, you need to provide a credentials file and an issuer ID.
@@ -59,3 +65,8 @@ Copy the value and point the environment variable `EDUTAP_WALLET_GOOGLE_ISSUER_I
 ```bash
 export EDUTAP_WALLET_GOOGLE_ISSUER_ID=1234567890123456789
 ```
+
+### Debugging
+
+The traffic from and to Google can be logged to a file.
+If the environment variable `EDUTAP_WALLET_GOOGLE_RECORD_API_CALLS_DIR` is set to a writeable directory, all traffic is recorded there.
