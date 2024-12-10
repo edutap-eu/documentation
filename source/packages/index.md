@@ -9,5 +9,6 @@ caption: Contents
 ---
 
 edutap_wallet_google/index.md
+edutap_wallet_apple/index.md
 
 ```

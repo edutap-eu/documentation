@@ -9,6 +9,7 @@ maxdepth: 2
 caption: Contents
 ---
 
+getting_started.md
 architecture/index.md
 concepts.md
 packages/index.md
