@@ -17,14 +17,16 @@ from edutap.wallet_google import api
 
 There are several ways for creating wallet data models.
 
+Create empty wallet class or object by registered name.
+The names are aquivalent to the names used in the google wallet documentation.
+
 ```python
-# Create empty wallet class or object by registered name.
-# The names are aquivalent to the names used in the google wallet documentation.
 model = api.new(name=...)
 ```
 
+Create wallet class or object by registered name and JSON serializable dictionary.
+
 ```python
-# Create wallet class or object by registered name and JSON serializable dictionary.
 model = api.new(name=..., data={...})
 ```
 
@@ -34,24 +36,32 @@ model = api.new(name=..., data={...})
 
 Create wallet object on google server and return save link with reference to it.
 
+Create wallet object model from supported data, no request is made yet.
+
 ```python
-# Create wallet object model from supported data, no request is made yet.
 wallet_object_model = api.new(name="GenericObject", data={...})
+```
 
-# Sends a request to Google API, a pass gets created on google servers,
-# not in the wallet yet.
+Sends a request to Google API, a pass gets created on google servers, not in the wallet yet.
+
+```python
 api.create(wallet_object_model)
+```
 
-# Create payload needed for generating a save link for our created pass.
+Create payload needed for generating a save link for our created pass.
+
+```python
 wallet_object_with_class_reference = api.new(
     name="GoogleWalletObjectWithClassReference",
     data={
         "classReference": wallet_object_model.id
     }
 )
+```
 
-# Create URL for adding the pass to a wallet. This link needs to get delivered
-# to the tapper.
+Create URL for adding the pass to a wallet. This link needs to get delivered to the tapper.
+
+```python
 add_to_wallet_url = api.save_link({
     "genericObjects": [
         wallet_object_with_class_reference
@@ -77,9 +87,10 @@ add_to_wallet_url = api.save_link({
 
 ### Update wallet object
 
+Create wallet object model.
+The pass ID of the wallet object to update must be set.
+
 ```python
-# Create wallet object model.
-# The pass ID of the wallet object to update must be set.
 wallet_object_model = api.new(name="GenericObject", data={
     "id": "existing-wallet-object-id",
     ...
@@ -112,18 +123,21 @@ from edutap.wallet_apple import api
 
 There are several ways for creating pass data models.
 
+Create empty pass.
+
 ```python
-# Create empty pass.
 model = api.new()
 ```
 
+Create pass from JSON serializable dictionary.
+
 ```python
-# Create pass from JSON serializable dictionary.
 model = api.new(data={...})
 ```
 
+Create pass from pkpass file.
+
 ```python
-# Create pass from pkpass file.
 with open('...', 'rb') as pkpass_file:
     model = api.new(file=pkpass_file)
 ```
@@ -133,25 +147,36 @@ with open('...', 'rb') as pkpass_file:
 Apple wallet follows a link where the device downloads the actual pass data.
 This link must be created via the `api` and delivered to the tapper in some way.
 
+Create a secure link.
+
 ```python
-# Create a secure link
 identifier = "some-unique-identifier"
 add_to_wallet_url = api.save_link(identifier)
 ```
 
 ### Create pass
 
+Create pass model and set it's data.
+
 ```python
-# Create pass model and set it's data.
 pass_model = api.new(data{...})
+```
 
-# Verify pass model.
+Verify pass model.
+
+```python
 api.verify(pass_model)
+```
 
-# Sign pass model. Now the pass model is immutable.
+Sign pass model. Now the pass model is immutable.
+
+```python
 api.sign(pass_model)
+```
 
-# Create pkpass file from pass model.
+Create pkpass file from pass model.
+
+```python
 with api.pkpass(pass_model) as pkpass_file:
     ...
 ```
@@ -161,14 +186,18 @@ with api.pkpass(pass_model) as pkpass_file:
 A pass update is technically the same thing as a create.
 If the initially created pkpass file was persisted, it can be reused.
 
+Create pass from pkpass file.
+
 ```python
-# Create pass from pkpass file.
 with open('...', 'rb') as pkpass_file:
     pass_model = api.new(file=pkpass_file)
 
 # Update pass model data here.
+```
 
-# Verify, sign and create pkpass file.
+Verify, sign and create pkpass file.
+
+```python
 api.verify(pass_model)
 api.sign(pass_model)
 with api.pkpass(pass_model) as pkpass_file:
