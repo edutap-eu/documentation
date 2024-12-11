@@ -21,7 +21,6 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    create
    read
    update
-   disable
    message
    listing
    save_link
@@ -29,15 +28,49 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
 ## Models
 
-### Top Level Models
+### Base Models
+
+```{eval-rst}
+
+.. rubric:: General Base Models
+
+`edutap.wallet_google.models.bases`
+
+.. currentmodule:: edutap.wallet_google.models.bases
+
+.. autosummary::
+   :toctree: _autosummary
+
+   Model
+   WithIdModel
+```
+
+### Pass Models
+
+
+```{eval-rst}
+
+.. rubric:: Pass Base Models
+
+`edutap.wallet_google.models.passes.bases`
+
+.. currentmodule:: edutap.wallet_google.models.passes.bases
+
+.. autosummary::
+   :toctree: _autosummary
+
+   ClassModel
+   ObjectModel
+   StyleableMixin
+   CommonLogosMixin
 
 ```{eval-rst}
 
 .. rubric:: Generic
 
-`edutap.wallet_google.models.generic`
+`edutap.wallet_google.models.passes.generic`
 
-.. currentmodule:: edutap.wallet_google.models.generic
+.. currentmodule:: edutap.wallet_google.models.passes.generic
 
 .. autosummary::
    :toctree: _autosummary
@@ -45,22 +78,11 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    GenericClass
    GenericObject
 
-.. rubric:: Message
-
-`edutap.wallet_google.models.message`
-
-.. currentmodule:: edutap.wallet_google.models.message
-
-.. autosummary::
-   :toctree: _autosummary
-
-   AddMessageRequest
-
 .. rubric:: Retail
 
-`edutap.wallet_google.models.retail`
+`edutap.wallet_google.models.passes.retail`
 
-.. currentmodule:: edutap.wallet_google.models.retail
+.. currentmodule:: edutap.wallet_google.models.passes.retail
 
 .. autosummary::
    :toctree: _autosummary
@@ -74,22 +96,45 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
 .. rubric:: Ticket and Transit
 
-`edutap.wallet_google.models.tickets_and_transit`
+`edutap.wallet_google.models.passes.tickets_and_transit`
 
-.. currentmodule:: edutap.wallet_google.models.tickets_and_transit
+.. currentmodule:: edutap.wallet_google.models.passes.tickets_and_transit
 
 .. autosummary::
    :toctree: _autosummary
 
    EventTicketClass
    EventTicketObject
+   TransitClass
+   TransitObject
+   FlightClass
+   FlightObject
 
+```
+
+### Miscellaneous Models
+
+```{eval-rst}
+
+`edutap.wallet_google.models.misc`
+
+.. currentmodule:: edutap.wallet_google.models.misc
+
+.. rubric:: ObjectWithClassReference
+
+.. autosummary::
+   :toctree: _autosummary
+
+   ObjectWithClassReference
+
+.. rubric:: AddMessageRequest
+
+.. autosummary::
+   :toctree: _autosummary
+
+   AddMessageRequest
 
 .. rubric:: Issuer
-
-`edutap.wallet_google.models.issuer`
-
-.. currentmodule:: edutap.wallet_google.models.issuer
 
 .. autosummary::
    :toctree: _autosummary
@@ -100,10 +145,6 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
 .. rubric:: JWT
 
-`edutap.wallet_google.models.jwt`
-
-.. currentmodule:: edutap.wallet_google.models.jwt
-
 .. autosummary::
    :toctree: _autosummary
 
@@ -113,71 +154,89 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
 ```
 
-### Data-Types
+### Data Type Models
 
+This are models for "Data Types" as Google names them, the sub schemas for nested objects.
 
 ```{eval-rst}
 
-.. currentmodule:: edutap.wallet_google.models.generic
 
-.. rubric:: Generic
+.. rubric:: data-types: Barcode
 
-`edutap.wallet_google.models.generic`
+`edutap.wallet_google.models.datatypes.barcode`
 
-.. autosummary::
-   :toctree: _autosummary
-
-   Notifications
-   ExpiryNotification
-   UpcomingNotification
-
-.. currentmodule:: edutap.wallet_google.models.retail
-
-.. rubric:: Retail
-
-`edutap.wallet_google.models.retail`
+.. currentmodule:: edutap.wallet_google.models.datatypes.barcode
 
 .. autosummary::
    :toctree: _autosummary
 
-   LoyaltyPointsBalance
-   LoyaltyPoints
+   Barcode
+   TotpParameters
+   TotpDetails
+   RotatingBarcode
 
-.. rubric:: Ticket and Transit
+.. rubric:: data-types: Class Template Info
 
-`edutap.wallet_google.models.tickets_and_transit`
+`edutap.wallet_google.models.datatypes.class_template_info`
 
-.. currentmodule:: edutap.wallet_google.models.tickets_and_transit
-
-.. autosummary::
-   :toctree: _autosummary
-
-   EventSeat
-   EventReservationInfo
-
-.. rubric:: Primitives
-
-`edutap.wallet_google.models.primitives`
-
-.. currentmodule:: edutap.wallet_google.models.primitives
+.. currentmodule:: edutap.wallet_google.models.datatypes.class_template_info
 
 .. autosummary::
    :toctree: _autosummary
 
-   Uri
-   ImageUri
-   Image
-   PassConstraints
-   SecurityAnimation
-   GroupingInfo
-   Pagination
-   CallbackOptions
+   FieldReference
+   FieldSelector
+   TemplateItem
+   BarcodeSectionDetail
+   CardBarcodeSectionDetails
+   CardRowOneItem
+   CardRowTwoItems
+   CardRowThreeItems
+   CardRowTemplateInfo
+   CardTemplateOverride
+   DetailsItemInfo
+   DetailsTemplateOverride
+   FirstRowOption
+   ListTemplateOverride
+   ClassTemplateInfo
 
-.. rubric:: Primitives: Enumerations
 
-`edutap.wallet_google.models.primitives.enums`
+.. rubric:: data-types: Data
 
-.. currentmodule:: edutap.wallet_google.models.primitives.enums
+`edutap.wallet_google.models.datatypes.data`
+
+.. currentmodule:: edutap.wallet_google.models.datatypes.data
+
+.. autosummary::
+   :toctree: _autosummary
+
+   TextModuleData
+   LabelValue
+   LabelValueRow
+   LinksModuleData
+   ImageModuleData
+   InfoModuleData
+   AppTarget
+   AppLinkInfo
+   AppLinkData
+
+.. rubric:: data-types: Datetime
+
+`edutap.wallet_google.models.datatypes.datetime`
+
+.. currentmodule:: edutap.wallet_google.models.datatypes.datetime
+
+.. autosummary::
+   :toctree: _autosummary
+
+   DateTime
+   TimeInterval
+
+.. rubric:: data-types: Enumerations
+
+`edutap.wallet_google.models.datatypes.enums`
+
+.. currentmodule:: edutap.wallet_google.models.datatypes.enums
 
 .. autosummary::
    :toctree: _autosummary
@@ -209,82 +268,42 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    TransitOption
    ViewUnlockRequirement
 
-.. rubric:: Primitives: Barcode
+.. rubric::  data-types: Event
 
-`edutap.wallet_google.models.primitives.barcode`
+`edutap.wallet_google.models.datatypes.event`
 
-.. currentmodule:: edutap.wallet_google.models.primitives.barcode
-
-.. autosummary::
-   :toctree: _autosummary
-
-   Barcode
-   TotpParameters
-   TotpDetails
-   RotatingBarcode
-
-.. rubric:: Primitives: Class Template Info
-
-`edutap.wallet_google.models.primitives.class_template_info`
-
-.. currentmodule:: edutap.wallet_google.models.primitives.class_template_info
+.. currentmodule:: edutap.wallet_google.models.datatypes.event
 
 .. autosummary::
    :toctree: _autosummary
 
-   FieldReference
-   FieldSelector
-   TemplateItem
-   BarcodeSectionDetail
-   CardBarcodeSectionDetails
-   CardRowOneItem
-   CardRowTwoItems
-   CardRowThreeItems
-   CardRowTemplateInfo
-   CardTemplateOverride
-   DetailsItemInfo
-   DetailsTemplateOverride
-   FirstRowOption
-   ListTemplateOverride
-   ClassTemplateInfo
+   EventSeat
+   EventReservationInfo
 
+.. rubric::  data-types: General
 
-.. rubric:: Primitives: Data
+`edutap.wallet_google.models.datatypes.general`
 
-`edutap.wallet_google.models.primitives.data`
-
-.. currentmodule:: edutap.wallet_google.models.primitives.data
+.. currentmodule:: edutap.wallet_google.models.datatypes.general
 
 .. autosummary::
    :toctree: _autosummary
 
-   TextModuleData
-   LabelValue
-   LabelValueRow
-   LinksModuleData
-   ImageModuleData
-   InfoModuleData
-   AppTarget
-   AppLinkInfo
-   AppLinkData
+   Uri
+   ImageUri
+   Image
+   PassConstraints
+   SecurityAnimation
+   GroupingInfo
+   Pagination
+   CallbackOptions
+   SaveRestrictions
 
-.. rubric:: Primitives: Datetime
+.. rubric:: data-types: Localized String
 
-`edutap.wallet_google.models.primitives.datetime`
+`edutap.wallet_google.models.datatypes.localized_string`
 
-.. currentmodule:: edutap.wallet_google.models.primitives.datetime
-
-.. autosummary::
-   :toctree: _autosummary
-
-   DateTime
-   TimeInterval
-
-.. rubric:: Primitives: Localized String
-
-`edutap.wallet_google.models.primitives.localized_string`
-
-.. currentmodule:: edutap.wallet_google.models.primitives.localized_string
+.. currentmodule:: edutap.wallet_google.models.datatypes.localized_string
 
 .. autosummary::
    :toctree: _autosummary
@@ -292,44 +311,69 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    TranslatedString
    LocalizedString
 
-.. rubric:: Primitives: Location
+.. rubric:: data-types: Location
 
-`edutap.wallet_google.models.primitives.location`
+`edutap.wallet_google.models.datatypes.location`
 
-.. currentmodule:: edutap.wallet_google.models.primitives.location
+.. currentmodule:: edutap.wallet_google.models.datatypes.location
 
 .. autosummary::
    :toctree: _autosummary
 
    LatLongPoint
 
-.. rubric:: Primitives: Message
+.. rubric::  data-types: Loyalty
 
-`edutap.wallet_google.models.primitives.message`
+.. currentmodule:: edutap.wallet_google.models.datatypes.loyalty
 
-.. currentmodule:: edutap.wallet_google.models.primitives.message
+`edutap.wallet_google.models.datatypes.loyalty`
+
+.. autosummary::
+   :toctree: _autosummary
+
+   LoyaltyPointsBalance
+   LoyaltyPoints
+
+.. rubric:: data-types: Message
+
+`edutap.wallet_google.models.datatypes.message`
+
+.. currentmodule:: edutap.wallet_google.models.datatypes.message
 
 .. autosummary::
    :toctree: _autosummary
 
    Message
 
-.. rubric:: Primitives: Money
+.. rubric:: data-types: Money
 
-`edutap.wallet_google.models.primitives.money`
+`edutap.wallet_google.models.datatypes.money`
 
-.. currentmodule:: edutap.wallet_google.models.primitives.money
+.. currentmodule:: edutap.wallet_google.models.datatypes.money
 
 .. autosummary::
    :toctree: _autosummary
 
    Money
 
-.. rubric:: Primitives: Retail
+.. currentmodule:: edutap.wallet_google.models.datatypes.notification
 
-`edutap.wallet_google.models.primitives.retail`
+.. rubric::  data-types: Notification
 
-.. currentmodule:: edutap.wallet_google.models.primitives.retail
+`edutap.wallet_google.models.datatypes.notification`
+
+.. autosummary::
+   :toctree: _autosummary
+
+   Notifications
+   ExpiryNotification
+   UpcomingNotification
+
+.. rubric:: data-types: Retail
+
+`edutap.wallet_google.models.datatypes.retail`
+
+.. currentmodule:: edutap.wallet_google.models.datatypes.retail
 
 .. autosummary::
    :toctree: _autosummary
@@ -338,22 +382,22 @@ Models can be the different top-level wallet-classes or -objects, but also issue
    DiscoverableProgramMerchantSigninInfo
    DiscoverableProgram
 
-.. rubric:: Primitives: Reviews
+.. rubric:: data-types: Reviews
 
-`edutap.wallet_google.models.primitives.review`
+`edutap.wallet_google.models.datatypes.review`
 
-.. currentmodule:: edutap.wallet_google.models.primitives.review
+.. currentmodule:: edutap.wallet_google.models.datatypes.review
 
 .. autosummary::
    :toctree: _autosummary
 
    Review
 
-.. rubric:: Primitives: Smarttap
+.. rubric:: data-types: Smarttap
 
-`edutap.wallet_google.models.primitives.smarttap`
+`edutap.wallet_google.models.datatypes.smarttap`
 
-.. currentmodule:: edutap.wallet_google.models.primitives.smarttap
+.. currentmodule:: edutap.wallet_google.models.datatypes.smarttap
 
 .. autosummary::
    :toctree: _autosummary
@@ -367,26 +411,9 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
 ```
 
-## Other
+## Modules
 
 ```{eval-rst}
-
-.. rubric:: Base Model Classes
-
-`edutap.wallet_google.models.bases`
-
-.. currentmodule:: edutap.wallet_google.models.bases
-
-.. autosummary::
-   :toctree: _autosummary
-
-   GoogleWalletModel
-   GoogleWalletWithIdModel
-   GoogleWalletClassModel
-   GoogleWalletObjectModel
-   GoogleWalletObjectWithClassReference
-   GoogleWalletStyleableMixin
-   GoogleWalletCommonLogosMixin
 
 .. rubric:: Model Registry
 
