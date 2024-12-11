@@ -1,3 +1,14 @@
 # `edutap.wallet_apple` Package Documentation
 
-Write me.
+Write me...
+
+
+```{toctree}
+---
+maxdepth: 2
+caption: Contents
+---
+
+reference
+
+```
