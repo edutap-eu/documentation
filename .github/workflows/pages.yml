@@ -37,7 +37,6 @@ jobs:
       with:
         version: "latest"
         python-version: 3.13
-        enable-cache: true
     - name: Install dependencies
       run: |
         make install
