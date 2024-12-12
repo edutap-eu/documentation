@@ -16,22 +16,6 @@ source .venv/bin/activate
 uv pip install edutap.wallet_google
 ```
 
-## Development
-
-## uv pip install -e .[test,typecheck,develop]
-
-Run all tests with
-
-```bash
-tox -e tests
-```
-
-Check codestyle with
-
-```bash
-tox -e lint
-```
-
 ## Configuration
 
 Configuration is done using environment variables.
@@ -70,3 +54,23 @@ export EDUTAP_WALLET_GOOGLE_ISSUER_ID=1234567890123456789
 
 The traffic from and to Google can be logged to a file.
 If the environment variable `EDUTAP_WALLET_GOOGLE_RECORD_API_CALLS_DIR` is set to a writeable directory, all traffic is recorded there.
+
+## Development
+
+Run unit tests:
+
+```bash
+uvx --with tox-uv tox -e test -- -m "not integration"
+```
+
+Run integration tests:
+
+```bash
+uvx --with tox-uv tox -e test -- -m "integration"
+```
+
+Format code and run checks:
+
+```bash
+uvx --with tox-uv tox -e lint
+```
