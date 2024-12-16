@@ -60,13 +60,13 @@ If the environment variable `EDUTAP_WALLET_GOOGLE_RECORD_API_CALLS_DIR` is set t
 Run unit tests:
 
 ```bash
-uvx --with tox-uv tox -e test -- -m "not integration"
+uvx --with tox-uv tox -e test
 ```
 
 Run integration tests:
 
 ```bash
-uvx --with tox-uv tox -e test -- -m "integration"
+uvx --with tox-uv tox -e test -- --run-integration
 ```
 
 Format code and run checks:
