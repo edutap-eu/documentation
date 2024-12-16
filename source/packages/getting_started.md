@@ -60,14 +60,13 @@ wallet_object_with_class_reference = api.new(
 )
 ```
 
-Create URL for adding the pass to a wallet. This link needs to get delivered to the tapper.
+Create URL for adding the pass to a wallet. This link needs to get delivered to the {term}`tapper`.
 
 ```python
-add_to_wallet_url = api.save_link({
-    "genericObjects": [
-        wallet_object_with_class_reference
-    ]
-})
+add_to_wallet_url = api.save_link(
+    wallet_object_model,
+    wallet_object_with_class_reference,
+)
 ```
 
 #### Case 2

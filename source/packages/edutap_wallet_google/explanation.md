@@ -17,19 +17,19 @@ In this client package all data-structure defined by Google are represented by P
 The models are defined in the `edutap.wallet_google.models` module and are documented in the [Reference](reference.md).
 
 All top-level models are registered in the `edutap.wallet_google.registry` module.
-In further code, the models are referenced by their registered name, which is the name of the class (in CamelCase).
+In further code, the models are referenced by their registered name, which is the name of the class (in CamelCase, as Google names them).
 
 The API functions are defined in the `edutap.wallet_google.api` module.
-They follow a CRUD API, while there is no delete at Google Wallet, but a disable.
+They follow a CRUD API approach, while there is no delete at Google Wallet (this needs to be done as an update with expiration date in past).
 Additional a message can be sent to a Wallet Class or Wallet Object.
-Also, a download link can be created.
+Also, a download link aka  "Add To Wallet" link can be created.
 All are documented in the [Reference](reference.md) section.
 
-Most API function do take a name of a model as first parameter.
+Some API functions do take a name of a model as first parameter.
 The name is the registered name.
 Depending on the registered name used, a function might not be able to execute.
-This is checked by the API function based on the registry record of the model, where the capabilities are stored.
-The constraints are coming from the Google API and are mirrored here.
+This is checked by the API function at runtime based on the registry record of the model, where the capabilities are stored.
+Each constraint origins in the Google API and is mirrored here.
 
 
 ## Contributing

@@ -1,10 +1,15 @@
 # Tutorials
 
+```{todo}
+Update for 2.0
+```
+
 We prepared four tutorials to get you started with the Google Wallet API.
 
 Before starting, follow the [installation and configuration instructions](installation.md).
 
 ## Create a pass and load it into the Google Wallet
+
 
 In this tutorial you will
 - create a Wallet Class (a template),
