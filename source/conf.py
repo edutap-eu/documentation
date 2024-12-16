@@ -24,7 +24,7 @@ copyright = f"{datetime.date.today().year}, eduTAP - EUGLOH Working Package - Ca
 author = "eduTAP team and contributors"
 
 # The full version, including alpha/beta/rc tags
-release = "v1.0alpha1"
+release = "v2.0.0alpha1"
 
 
 # -- General configuration ---------------------------------------------------
