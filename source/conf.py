@@ -20,7 +20,7 @@ import datetime
 # -- Project information -----------------------------------------------------
 
 project = "eduTAP"
-copyright = f"{datetime.date.today().year}, eduTAP - EUGLOH Working Package - Campus Life"
+copyright = f"{datetime.date.today().year}, eduTAP - EUGLOH Working Package - Campus Life and contributors"
 author = "eduTAP team and contributors"
 
 # The full version, including alpha/beta/rc tags
