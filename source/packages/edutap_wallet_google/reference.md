@@ -43,6 +43,7 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
    Model
    WithIdModel
+   CamelCaseAliasEnum
 ```
 
 ### Pass Models
@@ -50,7 +51,7 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 
 ```{eval-rst}
 
-.. rubric:: Pass Base Models
+.. rubric:: Pass Base Models and Helpers
 
 `edutap.wallet_google.models.passes.bases`
 
@@ -59,12 +60,12 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 .. autosummary::
    :toctree: _autosummary
 
+   Reference
    ClassModel
    ObjectModel
    StyleableMixin
    CommonLogosMixin
 
-```{eval-rst}
 
 .. rubric:: Generic
 
@@ -119,13 +120,6 @@ Models can be the different top-level wallet-classes or -objects, but also issue
 `edutap.wallet_google.models.misc`
 
 .. currentmodule:: edutap.wallet_google.models.misc
-
-.. rubric:: ObjectWithClassReference
-
-.. autosummary::
-   :toctree: _autosummary
-
-   ObjectWithClassReference
 
 .. rubric:: AddMessageRequest
 
@@ -425,9 +419,11 @@ This are models for "Data Types" as Google names them, the sub schemas for neste
    :toctree: _autosummary
 
    register_model
-   lookup_model
+   lookup_model_by_name
    lookup_model_by_plural_name
-   lookup_metadata
+   lookup_metadata_by_name
+   lookup_metadata_by_model_instance
+   lookup_metadata_by_model_type
    raise_when_operation_not_allowed
    RegistryMetadataDict
 

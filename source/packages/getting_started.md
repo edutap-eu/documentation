@@ -1,4 +1,4 @@
-# Using the wallet packages
+# Getting Started using the Wallet Packages
 
 While Google and Apple handle wallet passes entirely different.
 The related low level APIs offer a similar look and feel.
@@ -52,9 +52,10 @@ Create payload needed for generating a save link for our created pass.
 
 ```python
 wallet_object_with_class_reference = api.new(
-    name="GoogleWalletObjectWithClassReference",
+    name="Reference",
     data={
-        "classReference": wallet_object_model.id
+        "id": wallet_object_model.id,
+        "model_type": type(wallet_object_model)
     }
 )
 ```
@@ -78,11 +79,11 @@ The pass data is contained in the link aka self contained link.
 ```python
 wallet_object_model = api.new(name="GenericObject", data={...})
 
-add_to_wallet_url = api.save_link({
-    "genericObjects": [
+add_to_wallet_url = api.save_link(
+    [
         wallet_object_model
     ]
-})
+)
 ```
 
 ### Update wallet object
