@@ -2,3 +2,6 @@
 	path = submodules/edutap.wallet_google
 	url = https://github.com/edutap-eu/edutap.wallet_google.git
 #     url = git@github.com:edutap-eu/edutap.wallet_google.git`
+[submodule "submodules/edutap.wallet_apple"]
+	path = submodules/edutap.wallet_apple
+	url = https://github.com/edutap-eu/edutap.wallet_apple.git
