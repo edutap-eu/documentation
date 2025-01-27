@@ -34,10 +34,16 @@ jobs:
         submodules: 'true'
     - name: Setup Pages
       uses: actions/configure-pages@v5
-    - name: Setup Python
-      uses: actions/setup-python@v5
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v5
       with:
-        python-version: '3.11'
+        version: "latest"
+        python-version: 3.11
+        enable-cache: true
+        cache-dependency-glob: |
+          requirements.txt
+          constraints.txt
+          mx.ini
     - name: Install dependencies
       run: |
         make install
