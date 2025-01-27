@@ -35,6 +35,10 @@ Each time you save a file, this part gets re-rendered and reloaded in the browse
 Changes to the main branch are rendered and deployed with GitHub Actions on each push.
 It uses GitHub Pages for hosting.
 
+## Updates packages
+
+`source/packages/...` are GIT submodules, changes need to be done in the respective packages.
+
 # License
 
 The documentation is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
