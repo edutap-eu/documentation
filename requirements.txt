@@ -5,5 +5,5 @@ sphinx-copybutton
 sphinxcontrib-mermaid
 sphinx-autobuild
 autodoc_pydantic
-git+https://github.com/edutap-eu/edutap.wallet_google.git@main
-git+https://github.com/edutap-eu/edutap.wallet_apple.git@webservice
+-e submodules/edutap.wallet_google
+git+https://github.com/edutap-eu/edutap.wallet_apple.git

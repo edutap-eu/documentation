@@ -10,15 +10,21 @@ This documentation is written using [Sphinx](https://www.sphinx-doc.org/) and [M
 
 For the local authoring preview, you
 
-1. need Python 3.11 to be installed.
-2. clone the repository.
+1. need Python 3.11+ and uv to be installed.
+2. clone the repository and init submodules
+
+   ```bash
+   git clone https://github.com/edutap-eu/documentation.git
+   cd documentation
+   git submodule update --init --recursive
+   ```
+
 3. run the following commands in the cloned repositories directory:
 
    ```bash
-   python -m venv venv
+   uv venv
    source ./venv/bin/activate
-   pip install -r requirements.txt
-   make livehtml
+   make docs-live
    ```
 1. go to http://localhost:8000 to view the documentation.
 
