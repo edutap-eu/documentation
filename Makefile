@@ -45,7 +45,7 @@ PRIMARY_PYTHON?=python3
 
 # Minimum required Python version.
 # Default: 3.9
-PYTHON_MIN_VERSION?=3.9
+PYTHON_MIN_VERSION?=3.11
 
 # Install packages using the given package installer method.
 # Supported are `pip` and `uv`. If uv is used, its global availability is
@@ -59,7 +59,7 @@ PYTHON_PACKAGE_INSTALLER?=uv
 # Flag whether to use a global installed 'uv' or install
 # it in the virtual environment.
 # Default: false
-MXENV_UV_GLOBAL?=false
+MXENV_UV_GLOBAL?=true
 
 # Flag whether to use virtual environment. If `false`, the
 # interpreter according to `PRIMARY_PYTHON` found in `PATH` is used.
@@ -100,7 +100,7 @@ DOCS_TARGET_FOLDER?=html
 
 # Documentation Python requirements to be installed (via pip).
 # No default value.
-DOCS_REQUIREMENTS?=
+DOCS_REQUIREMENTS?=-r requirements.txt
 
 ## core.mxfiles
 
