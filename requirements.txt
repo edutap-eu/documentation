@@ -6,4 +6,4 @@ sphinxcontrib-mermaid
 sphinx-autobuild
 autodoc_pydantic
 -e submodules/edutap.wallet_google
-git+https://github.com/edutap-eu/edutap.wallet_apple.git
+-e submodules/edutap.wallet_apple
