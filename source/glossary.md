@@ -21,6 +21,9 @@ ESC
 ESCI
     European Student Card Initiative
 
+ESCN
+    European Stundent Card Number, a UUID that is modified to ensure unique numbers in a distributed setup, therefore the last UUID-segment is replaced by the
+
 ESCP
     European Student Card Project
 

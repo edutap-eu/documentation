@@ -20,7 +20,7 @@ import datetime
 # -- Project information -----------------------------------------------------
 
 project = "eduTAP"
-copyright = f"{datetime.date.today().year}, eduTAP - EUGLOH Working Package - Campus Life and contributors"
+copyright = f"{datetime.date.today().year}, eduTAP team and contributors"
 author = "eduTAP team and contributors"
 
 # The full version, including alpha/beta/rc tags
@@ -34,7 +34,9 @@ release = "v2.0.0alpha1"
 # ones.
 extensions = [
     "myst_parser",
+    "sphinx.ext.githubpages",
     "sphinx_copybutton",
+    "sphinx_issues",
     "sphinxcontrib.mermaid",
     "sphinx.ext.todo",
     "sphinx.ext.autodoc",
@@ -57,17 +59,27 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_title = "eduTAP"
+html_title = "eduTAP Project"
 
 # html_logo = "_static/logo.svg"
 # html_favicon = "_static/favicon.ico"
-html_logo = "_static/project-logo.png"
+# html_logo = "_static/project-logo.png"
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
     "icon_links": [
         {
             # Label for this link
-            "name": "GitHub",
+            "name": "Website",
+            # URL where the link will redirect
+            "url": "https://edutap.eu/",  # required
+            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "icon": "fa fa-globe",
+            # The type of image to be used (see below for details)
+            "type": "fontawesome",
+        },
+        {
+            # Label for this link
+            "name": "GitHub eduTAP core",
             # URL where the link will redirect
             "url": "https://github.com/edutap-eu/",  # required
             # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
@@ -77,11 +89,21 @@ html_theme_options = {
         },
         {
             # Label for this link
-            "name": "Website",
+            "name": "GitHub eduTAP community components",
             # URL where the link will redirect
-            "url": "https://edutap.eu/",  # required
+            "url": "https://github.com/edutap-collective/",  # required
             # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
-            "icon": "fa fa-globe",
+            "icon": "fa-brands fa-square-github",
+            # The type of image to be used (see below for details)
+            "type": "fontawesome",
+        },
+        {
+            # Label for this link
+            "name": "GitHub eduTAP doccumentation issues",
+            # URL where the link will redirect
+            "url": "https://github.com/edutap-eu/documentation/issues",  # required
+            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "icon": "fa-brands fa-square-github",
             # The type of image to be used (see below for details)
             "type": "fontawesome",
         },

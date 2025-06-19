@@ -1,6 +1,7 @@
 sphinx
 myst-parser
 pydata_sphinx_theme
+sphinx-issues
 sphinx-copybutton
 sphinxcontrib-mermaid
 sphinx-autobuild
