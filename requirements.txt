@@ -5,6 +5,7 @@ sphinx-issues
 sphinx-copybutton
 sphinxcontrib-mermaid
 sphinx-autobuild
+sphinxcontrib.spelling
 autodoc_pydantic
 -e submodules/edutap.wallet_google
 -e submodules/edutap.wallet_apple

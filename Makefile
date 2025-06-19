@@ -262,6 +262,17 @@ docs-clean: docs-dirty
 		sphinx sphinx-autobuild $(DOCS_REQUIREMENTS) || :
 	@rm -rf $(DOCS_TARGET_FOLDER)
 
+.PHONY: linkcheck
+linkcheck: $(DOCS_TARGET)
+	@echo "Check links in Sphinx documentation"
+	@$(SPHINX_BIN) -b linkcheck $(DOCS_SOURCE_FOLDER) $(DOCS_TARGET_FOLDER)
+
+
+.PHONY: spelling
+spelling: $(DOCS_TARGET)
+	@echo "Check links in Sphinx documentation"
+	@$(SPHINX_BIN) -b spelling $(DOCS_SOURCE_FOLDER) $(DOCS_TARGET_FOLDER)
+
 INSTALL_TARGETS+=$(DOCS_TARGET)
 DIRTY_TARGETS+=docs-dirty
 CLEAN_TARGETS+=docs-clean
