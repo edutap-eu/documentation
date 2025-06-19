@@ -126,6 +126,14 @@ myst_enable_extensions = [
     "tasklist",
 ]
 
+# -- Options for sphinx.ext.autodoc -----------------------------------
+
+# -- Options for linkcheck --------------------------------------------
+
+linkcheck_exclude_documents = [
+    r"packages/.*/_autosummary/.*",
+]
+
 # -- Options for Sphinx.ext.todo --------------------------------------
 
 todo_include_todos = True
