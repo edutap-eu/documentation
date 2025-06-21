@@ -9,7 +9,9 @@ The eduTAP Project is:
 * a service directory (coming soon)
 * a documentation of best practices
 
-
+```{hint}
+This Document / Documentation define requirements, therefor the key words "**MUST**", "**REQUIRED**", "**SHALL**", "**MUST NOT**", "**SHALL NOT**", "**SHOULD**", "**RECOMMENDED**", "**SHOULD NOT**", "**NOT RECOMMENDED**", "**MAY**", and "**OPTIONAL**" in this document are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+```
 
 
 
@@ -19,6 +21,12 @@ The eduTAP Project is:
 maxdepth: 2
 caption: Contents
 ---
+
+concept/index.md
+software/index.md
+project/index.md
+appendix/index.md
+
 
 architecture/index.md
 concepts.md
