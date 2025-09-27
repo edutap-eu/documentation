@@ -1,6 +1,6 @@
 # eduTAP Project Documentation
 
-eduTAP as "educational tapping", derived from the marketing term "tap to pay" / "tap to open" / "tap to ride" by Apple and Google, describing the act of "tap" a smartphone on a reader device to perform a transaction.
+eduTAP as "educational tapping", derived from the marketing term "tap to pay" / "tap to open" / "tap to ride" by Apple and Google, describing the act of *"tap" a smartphone on a reader device* to perform a transaction.
 
 The eduTAP Project is:
 
@@ -27,9 +27,7 @@ software/index.md
 project/index.md
 appendix/index.md
 
-
 architecture/index.md
-concepts.md
 packages/index.md
 
 ```
