@@ -42,6 +42,8 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinxcontrib.autodoc_pydantic",
+    # The esc_router_api landing page uses grids and cards.
+    "sphinx_design",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -50,7 +52,16 @@ templates_path = ["_templates"]
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = [
+    # The package documentation is symlinked in from each submodule's own `docs/`
+    # directory, so whatever else lives there arrives with it: the package's own
+    # Sphinx configuration, its build output, its documentation virtualenv, and its
+    # working documents. None of that belongs in this build.
+    "packages/*/conf.py",
+    "packages/*/_build/**",
+    "packages/*/.venv/**",
+    "packages/*/superpowers/**",
+]
 
 
 # -- Options for HTML output -------------------------------------------------

@@ -5,3 +5,6 @@
 [submodule "submodules/edutap.wallet_apple"]
 	path = submodules/edutap.wallet_apple
 	url = https://github.com/edutap-eu/edutap.wallet_apple.git
+[submodule "submodules/edutap.esc_router_api"]
+	path = submodules/edutap.esc_router_api
+	url = https://github.com/edutap-eu/edutap.esc_router_api.git
